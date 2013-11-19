@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WidgetBuilder", "WidgetBuilder\WidgetBuilder.csproj", "{D78CC718-05F6-4F08-9585-257AF23863A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DampWidgetExtension", "DampWidgetExtension\DampWidgetExtension.csproj", "{7730AA5B-78D4-46EC-A5C5-0C25CC4DEABE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D78CC718-05F6-4F08-9585-257AF23863A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D78CC718-05F6-4F08-9585-257AF23863A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D78CC718-05F6-4F08-9585-257AF23863A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D78CC718-05F6-4F08-9585-257AF23863A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7730AA5B-78D4-46EC-A5C5-0C25CC4DEABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7730AA5B-78D4-46EC-A5C5-0C25CC4DEABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7730AA5B-78D4-46EC-A5C5-0C25CC4DEABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7730AA5B-78D4-46EC-A5C5-0C25CC4DEABE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
