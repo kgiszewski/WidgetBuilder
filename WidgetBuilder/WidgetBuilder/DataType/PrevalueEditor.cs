@@ -135,7 +135,7 @@ namespace WidgetBuilder
             toolbar.Text += "<div><a href='#' type='map'><img src='/umbraco/plugins/WidgetBuilder/images/map.png' alt='' title='DAMP'/><span>Map</span></a></div>";
             toolbar.Text += "<div><a href='#' type='inlinepicker'><img src='/umbraco/plugins/WidgetBuilder/images/inlinepicker.png' alt='' title='Inline Image Picker'/><span>Inline Image Picker</span></a></div>";
 
-            toolbar.Text += "<div><a href='#' type='datepicker'><img src='/umbraco/plugins/WidgetBuilder/images/datepicker.png' alt='' title='Date Picker'/><span>Date Picker</span></a></div>";
+            //toolbar.Text += "<div><a href='#' type='datepicker'><img src='/umbraco/plugins/WidgetBuilder/images/datepicker.png' alt='' title='Date Picker'/><span>Date Picker</span></a></div>";
             
             toolbar.Text += "</div>";
             toolbar.Text += "<div><a class='json' href='#'>Toggle JSON (Advanced Only)</a></div>";

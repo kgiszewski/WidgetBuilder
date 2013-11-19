@@ -123,8 +123,8 @@ namespace WidgetBuilder
         
         protected void buildControls()
         {
-            string jqueryUI = string.Format("<script src=\"{0}\" ></script>", "/umbraco_client/ui/jqueryui.js");
-            ScriptManager.RegisterClientScriptBlock(Page, typeof(Widget_Builder_DataEditor), "jqueryUI", jqueryUI, false);
+            //string jqueryUI = string.Format("<script src=\"{0}\" ></script>", "/umbraco_client/ui/jqueryui.js");
+            //ScriptManager.RegisterClientScriptBlock(Page, typeof(Widget_Builder_DataEditor), "jqueryUI", jqueryUI, false);
 
             string basicJS = string.Format("<script src=\"{0}\" ></script>", "/umbraco/plugins/WidgetBuilder/WidgetBuilder.js");
             ScriptManager.RegisterClientScriptBlock(Page, typeof(Widget_Builder_DataEditor), "WidgetBuilderJS", basicJS, false);
