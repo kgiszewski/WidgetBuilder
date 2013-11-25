@@ -140,8 +140,6 @@ namespace WidgetBuilder
             toolbar.Text += "</div>";
             toolbar.Text += "<div><a class='json' href='#'>Toggle JSON (Advanced Only)</a></div>";
 
-            toolbar.Text += "<div class='version'>WB v"+Widget_Builder.GetAssemblyVersion+"</div>";
-
             toolbar.RenderControl(writer);
         }
 
