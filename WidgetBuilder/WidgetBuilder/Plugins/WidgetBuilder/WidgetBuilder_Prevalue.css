@@ -1,0 +1,120 @@
+.widgetSaveBox{
+  display: none;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.widgetToolbarWrapper{
+  border: 1px solid grey;
+  padding: 0 0 5px 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.widgetToolbarWrapper>div{
+    float: left;
+    border: 1px solid grey;
+    padding: 2px;
+    padding-right: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    background-color: #ccc;
+}
+
+.widgetToolbarWrapper a{
+    color: black;
+    text-decoration:none;
+}
+
+.widgetToolbarWrapper img{
+  padding: 2px;
+  margin-right: 5px;
+  float: left;
+}
+
+.gridWrapperDiv{
+  overflow: hidden;
+}
+
+.widgetGridTable{
+  border: 1px solid grey;
+  background-color: #fff;
+  margin-bottom: 5px;
+  width: 600px;
+}
+
+/* type box */
+.widgetGridTable>tbody>tr>td:first-child{
+  vertical-align: top;
+  background-color: #ccc;
+  padding: 5px;
+  width: 100px;
+}
+
+.widgetElementPlaceholder{
+  background-color: lemonChiffon;
+  height: 20px;
+  border: 1px dashed lightGrey;
+  margin-bottom: 5px;
+}
+
+.widgetMaxIndents{
+  width: 30px;
+}
+
+.maxWidgets{
+  width: 30px;
+}
+
+.widgetPrevalues{
+  
+}
+
+.widgetButtons{
+  text-align: right;
+  vertical-align: top;
+}
+
+/* prevalue title */
+.widgetPrevalues>table>tbody>tr>td:first-child{
+  width: 125px;
+  border: 1px dotted #ddd;
+  vertical-align: top;
+}
+
+.widgetPrevalues>table>tbody>tr>td:nth-child(2){
+  width: 300px;
+}
+
+
+.widgetPrevalues input[type=text]{
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 2px;
+}
+
+.widgetPrevalues textarea{
+  width: 100%;
+  border: 1px solid #ccc;
+  resize: none;
+  padding: 2px;
+  height: 2em;
+}
+
+.gridImage{
+  float: left;
+  margin-right: 5px;
+}
+
+.jsInclude, .cssInclude{
+  width: 400px;
+}
+
+.warn{
+  background-color: lemonChiffon;
+}
+
+.json{
+  display: block;
+  text-align: right;
+}

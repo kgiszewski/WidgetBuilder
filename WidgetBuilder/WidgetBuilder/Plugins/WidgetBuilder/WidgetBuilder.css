@@ -1,0 +1,179 @@
+.widgetSaveBox{
+  display: block;
+  height: 200px;
+  width: 100%;
+}
+
+.widgetWrapperDiv{
+  position: relative;
+  width: inherit;
+}
+
+.widgetWrapper{
+  border: none;
+  padding: 7px 7px 2px 7px;
+  background: transparent;
+  margin-bottom: 10px;
+  min-height: 100px;
+}
+
+.widgetHidden{
+  display: none;
+}
+
+.widgetButtons {
+  width: 20px;
+  text-align: center;
+  padding: 5px;
+  float: right;
+  position: absolute;
+  left: 0px;
+  margin: 0px 0px 0px 0px;
+  background-color: #666;
+  border:none;
+} 
+
+.widgetButtons img{
+  padding-top: 2px;
+}
+
+.widgetElementPlaceholder{
+  background-color: #FAF4B7;
+  border: 1px dotted #aaa;
+  font-weight: bold;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.widgetElementTable{
+  /*width: 100%;*/
+}
+
+.widgetElementTable>tbody>tr>td:first-child{
+  vertical-align: top;
+  background-color: #ccc;
+  padding: 5px;
+  border: 1px solid #666;
+  width: 20%;
+}
+
+.widgetTextBox, .widgetTextarea{
+  width: 99%;
+  border: 1px solid #ccc;
+  padding: 2px;
+}
+
+.widgetTextarea{
+  min-height: 150px;
+  font-size: 13px;
+  line-height: 1.4em;
+  font-family:inherit;
+}
+
+.widgetCollapsed{
+  height: 100px;
+  overflow: hidden;
+}
+
+.widgetFade{
+  background: url('/umbraco/plugins/WidgetBuilder/images/openLarge.png') top center no-repeat;
+  background-color: rgb(90, 90, 90); /* Fall-back for browsers that don't support rgba */
+  background-color: rgba(90, 90, 90, .6);
+  background-position:center center;
+  height: 104px;
+  width: 88%;
+  min-width: 800px;
+  position: relative;
+  top: -112px;
+  bottom: ;
+  left: -10px;
+  margin:  0px 0px -92px 47px; 
+}
+
+.widgetFadeWrapper{
+  overflow: hidden;
+  clear: both;
+}
+
+
+
+/* 
+
+output formatting 
+
+*/
+
+.widgetElementWrapper {
+  overflow: hidden;
+  clear: both;
+  background-color: #eee;
+  margin-bottom: 11px;
+  border-top:1px solid #ddd;  
+  border-left:1px solid #ddd; 
+  box-shadow: 1px 1px 1.5px #888;
+  padding:3px;
+  max-width: 90%;
+  min-width: 800px;
+}
+
+
+.widgetDamp .control-button {
+  margin-top:-20px;
+}
+
+.widgetElementWrapper{
+}
+
+.widgetLabelWrapper{
+  padding: 5px;
+  padding-top: 8px;
+  overflow: hidden;
+  width: 10%;
+  float: left;
+  font-weight:bold;
+}
+
+.widgetControlWrapper{
+  padding: 5px;
+  overflow: hidden;
+}
+
+.widgetElementWrapper[type=spreadsheet] .widgetControlWrapper{
+  max-height: 400px;
+  overflow: auto;
+  border: 1px solid #eee;
+}
+
+.widgetElementWrapper[type=spreadsheet] .widgetControlWrapper tr{
+  height: 1px;
+}
+
+.uNewsGoogleMapControls textarea, .widgetControlWrapper .uNewsGoogleMapDiv{
+  width: 90%;
+}
+
+.WidgetRepeatable {
+  margin-left: 30px;
+}
+
+.widgetCollapse {
+  margin-top: 2px;
+}
+
+.widgetRemove{
+  margin-top: 20px;
+}
+
+
+/******* full screen it ***********/
+
+.propertypane div.propertyItem .propertyItemheader.widgetPropertyItemheader  {
+  float:none;
+  font-size: 12pt;
+  width:inherit;
+
+}
+.propertypane div.propertyItem .propertyItemContent.widgetPropertyItemContent {
+  float:none;
+}
