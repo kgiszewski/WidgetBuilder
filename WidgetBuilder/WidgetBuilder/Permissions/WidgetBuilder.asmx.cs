@@ -11,7 +11,7 @@ namespace WidgetBuilder
     /// <summary>
     /// Summary description for WidgetBuilder
     /// </summary>
-    [WebService(Namespace = "http://fele.com/")]
+    [WebService(Namespace = "http://gizmo42.com/")]
     [System.Web.Script.Services.ScriptService]
 
     public class WidgetBuilderService : System.Web.Services.WebService
