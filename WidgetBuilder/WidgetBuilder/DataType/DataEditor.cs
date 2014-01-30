@@ -78,7 +78,7 @@ namespace WidgetBuilder
             base.OnInit(e);
 
             instanceNodeID=((Widget_Builder_Default_Data)savedData).DataTypeDefinitionId;
-            dataTypeDefinition = DataTypeDefinition.GetAll().Where(d => d.DataType.DataTypeDefinitionId == instanceNodeID).First();
+            dataTypeDefinition = DataTypeDefinition.GetAll().Where(d =>d.DataType != null && d.DataType.DataTypeDefinitionId == instanceNodeID).First();
 
             string basicCSS = string.Format("<link href=\"{0}\" type=\"text/css\" rel=\"stylesheet\" />", "/umbraco/plugins/WidgetBuilder/WidgetBuilder.css");
             ScriptManager.RegisterClientScriptBlock(Page, typeof(Widget_Builder_DataEditor), "WidgetBuilderCSS", basicCSS, false);            
