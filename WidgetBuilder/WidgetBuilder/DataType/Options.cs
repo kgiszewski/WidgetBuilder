@@ -130,7 +130,7 @@ namespace WidgetBuilder
         public bool hidePixlr = true;
         public bool enableSearch = true;
         public bool enableSearchAutoSuggest = true;
-        public string searchMethod = "all";
+        public string searchMethod = "selected";
 
     }
 
