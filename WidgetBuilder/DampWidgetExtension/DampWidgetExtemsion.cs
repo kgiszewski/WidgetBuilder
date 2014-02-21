@@ -42,6 +42,9 @@ namespace DampWidgetExtension
             ((IMediaPicker)Controls[0]).MaximumNodesText = MaximumNodesText;
             ((IMediaPicker)Controls[0]).MandatoryText = MandatoryText;
             ((IMediaPicker)Controls[0]).DataTypeDefinitionId = DataTypeDefinitionId;
+            ((IMediaPicker)Controls[0]).EnableSearch = EnableSearch;
+            ((IMediaPicker)Controls[0]).EnableSearchAutoSuggest = EnableSearchAutoSuggest;
+            ((IMediaPicker)Controls[0]).SearchMethod = SearchMethod;
 
             //Log.Add(LogTypes.Debug, 0, "Allowed Selecteable->"+AllowedSelectableMediaTypesValue);
 

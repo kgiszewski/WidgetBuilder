@@ -443,6 +443,10 @@ namespace WidgetBuilder
             addCheckBoxOption(prevalueTable, "Hide Open?", options.hideOpen, "widgetHideOpen");
             addCheckBoxOption(prevalueTable, "Hide Pixlr?", options.hidePixlr, "widgetHidePixlr");
             addTextBoxOption(prevalueTable, "Image Cropper Property Alias", options.imageCropperAlias, "widgetCropperAlias");
+
+            addCheckBoxOption(prevalueTable, "Enable Search?", options.enableSearch, "widgetEnableSearch");
+            addCheckBoxOption(prevalueTable, "Enable Search Auto Suggest?", options.enableSearchAutoSuggest, "widgetEnableSearchAutoSuggest");
+            addRadioButtonList(prevalueTable, "Search Under Selected Node?", "all,selected", options.searchMethod, "widgetSearchMethod");
             
             /////////////////////////
 
@@ -710,6 +714,39 @@ namespace WidgetBuilder
             checkbox.Checked = isChecked;
             td.Controls.Add(checkbox);
         }
+
+        protected void addRadioButtonList(HtmlTable prevalueTable, string title, string strCheckBoxList, string checkedRadio, string className)
+        {
+            HtmlTableRow tr = new HtmlTableRow();
+            prevalueTable.Rows.Add(tr);
+
+            HtmlTableCell td = new HtmlTableCell();
+            tr.Cells.Add(td);
+            td.InnerText = title;
+
+            td = new HtmlTableCell();
+            tr.Cells.Add(td);
+
+            
+            foreach(string radioButtonText in strCheckBoxList.Split(',')){
+                RadioButton rb = new RadioButton();
+                rb.Text = radioButtonText;
+                rb.ID = radioButtonText;
+                rb.GroupName = className;
+                rb.CssClass = className;
+
+                if (radioButtonText == checkedRadio)
+                {
+                    rb.Checked = true;
+                }
+                td.Controls.Add(rb);
+
+            }
+
+
+          
+        }
+
 
         protected void addListOption(HtmlTable prevalueTable, string title, List<ListItem> list, string className)
         {

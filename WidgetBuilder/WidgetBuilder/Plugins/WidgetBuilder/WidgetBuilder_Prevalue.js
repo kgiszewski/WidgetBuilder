@@ -71,6 +71,11 @@ $(function(){
     buildJSON();
   });
   
+  //respond to a radio button changing
+  $("input[type=radio]").live("click", function(){
+    buildJSON();
+  });
+  
   //respond to save
   $("form").submit(function(e){
     $(".widgetElementName").each(function(){
@@ -231,7 +236,10 @@ $(function(){
             options.add('hideEdit', $table.find('.widgetHideEdit input').is(':checked'));
             options.add('hideOpen', $table.find('.widgetHideOpen input').is(':checked'));
             options.add('hidePixlr', $table.find('.widgetHidePixlr input').is(':checked'));
-            
+			
+			options.add('enableSearch', $table.find('.widgetEnableSearch input').is(':checked'));
+			options.add('enableSearchAutoSuggest', $table.find('.widgetEnableSearchAutoSuggest input').is(':checked'));
+			options.add('searchMethod', $table.find('.widgetSearchMethod input:radio[name=widgetSearchMethod]:checked').val());
             elements.push(new element($table.attr('type'), options.get()).value);
             break;
             

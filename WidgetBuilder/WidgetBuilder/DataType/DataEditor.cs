@@ -471,6 +471,11 @@ namespace WidgetBuilder
             damp.AllowedSelectableMediaTypesValue = prevalues.selectableMediaNodes;
             damp.DefaultMediaTypeValue = prevalues.defaultMediaNodeID;
             damp.SelectMultipleNodesValue = prevalues.allowMultiple;
+
+            damp.EnableSearch = prevalues.enableSearch;
+            damp.EnableSearchAutoSuggest = prevalues.enableSearchAutoSuggest;
+            damp.SearchMethod = prevalues.searchMethod;
+
             if (prevalues.startNodeID != "")
             {
                 damp.StartNodeIdValue = Convert.ToInt32(prevalues.startNodeID);

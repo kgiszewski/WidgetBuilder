@@ -128,6 +128,10 @@ namespace WidgetBuilder
         public bool hideEdit = false;
         public bool hideOpen = true;
         public bool hidePixlr = true;
+        public bool enableSearch = true;
+        public bool enableSearchAutoSuggest = true;
+        public string searchMethod = "all";
+
     }
 
     public class MapOptions
