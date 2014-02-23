@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WidgetBuilder", "WidgetBuil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DampWidgetExtension", "DampWidgetExtension\DampWidgetExtension.csproj", "{7730AA5B-78D4-46EC-A5C5-0C25CC4DEABE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WidgetBuilder.Extensions", "WidgetBuilder.Extensions\WidgetBuilder.Extensions.csproj", "{58ACA5DB-714F-4D84-821F-20DAF0D578CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{7730AA5B-78D4-46EC-A5C5-0C25CC4DEABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7730AA5B-78D4-46EC-A5C5-0C25CC4DEABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7730AA5B-78D4-46EC-A5C5-0C25CC4DEABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58ACA5DB-714F-4D84-821F-20DAF0D578CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58ACA5DB-714F-4D84-821F-20DAF0D578CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58ACA5DB-714F-4D84-821F-20DAF0D578CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58ACA5DB-714F-4D84-821F-20DAF0D578CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
