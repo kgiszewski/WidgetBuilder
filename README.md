@@ -22,6 +22,9 @@ Note: This is not compatible with Umbraco v7.
 
 Note that this project is sunsetting due to incompatibility with Umbraco 7.  This means no active development is planned but pull-requests and the occassional bug fix with continue.
 
+### Documentation ###
+[Visit the doc portal](http://kgiszewski.github.io/WidgetBuilder/)
+
 ### Known Issues ###
 
 Widget Builder isn't perfect, here is a list of known issues:
