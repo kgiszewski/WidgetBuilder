@@ -5,6 +5,8 @@ WidgetBuilder for Umbraco v6
 
 [Video Demo](http://www.youtube.com/watch?feature=player_embedded&v=GMCVmM3RN8o)
 
+A blog about it from [Maria Lind](http://inaboxdesign.dk/blog/widget-builder-for-umbraco/)
+
 Widget Builder is on-the-fly fieldset management. 
 
 Give editors the flexibility to add what they need when they need it.
