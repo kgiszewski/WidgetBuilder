@@ -22,8 +22,17 @@ Note: This is not compatible with Umbraco v7.
 
 Note that this project is sunsetting due to incompatibility with Umbraco 7.  This means no active development is planned but pull-requests and the occassional bug fix with continue.
 
+### Licensing ###
+
+This project is now released under the [MIT license](http://opensource.org/licenses/MIT) and free to use.  A paid support license is available if needed.  Visit the [doc portal](http://kgiszewski.github.io/WidgetBuilder/) for more details.
+
 ### Documentation ###
-[Visit the doc portal](http://kgiszewski.github.io/WidgetBuilder/)
+
+All project documentation is on the doc portal. Visit the doc portal [here](http://kgiszewski.github.io/WidgetBuilder/).
+
+### Where did version 1 go? ###
+
+Version 2 and version 1 were merged and v1 is now deprecated.  Version 2 is free to use and you can upgrade from v1 to v2 by following instructions in the [doc portal](http://kgiszewski.github.io/WidgetBuilder/).
 
 ### Known Issues ###
 
