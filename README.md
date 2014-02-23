@@ -3,20 +3,18 @@ WidgetBuilder for Umbraco v6
 
 ### What is it? ###
 
-[Video Demo](http://www.youtube.com/watch?feature=player_embedded&v=GMCVmM3RN8o)
-
-A blog about it from [Maria Lind](http://inaboxdesign.dk/blog/widget-builder-for-umbraco/)
+Checkout the [Video Demo](http://www.youtube.com/watch?feature=player_embedded&v=GMCVmM3RN8o) or the blog from [Maria Lind](http://inaboxdesign.dk/blog/widget-builder-for-umbraco/).
 
 Widget Builder is on-the-fly fieldset management and gives editors the flexibility to add what they need when they need it.
 
-Comes with several native property types and is compatible with some 3rd-party property editors like [DAMP](http://our.umbraco.org/projects/backoffice-extensions/digibiz-advanced-media-picker)
+Comes with several native property types and is compatible with some 3rd-party property editors like [DAMP](http://our.umbraco.org/projects/backoffice-extensions/digibiz-advanced-media-picker).
 
 - Allows editors to add fields at run-time.
 - Set permissions on a per Widget or a per Widget Property level. 
 - Use the Umbraco data type editor to setup your custom widget.
 - Attach custom JS/CSS files to your Widget.
 
-Note: This is not compatible with Umbraco v7.
+Note: This is not compatible with Umbraco v7.  For similiar v7 functionality see [Umbraco Archetype](https://github.com/imulus/Archetype).
 
 ### Sunsetting ###
 
