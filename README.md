@@ -1,4 +1,4 @@
-WidgetBuilder for Umbraco v6
+Widget Builder for Umbraco v6
 =
 
 ### What is it? ###
