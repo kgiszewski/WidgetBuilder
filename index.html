@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Widget Builder for Umbraco v6 by kgiszewski</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Widget Builder for Umbraco v6</h1>
+        <p class="header">Documentation Portal</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/kgiszewski/WidgetBuilder/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/kgiszewski/WidgetBuilder/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/kgiszewski/WidgetBuilder">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/kgiszewski">kgiszewski</a></p>
+
+
+      </header>
+      <section>
+        <h3>
+<a name="welcome-to-the-widget-build-documentation-portal" class="anchor" href="#welcome-to-the-widget-build-documentation-portal"><span class="octicon octicon-link"></span></a>Welcome to the Widget Build Documentation Portal</h3>
+
+<p>Widget Builder is on-the-fly fieldset management and gives editors the flexibility to add what they need when they need it.</p>
+
+<p>Comes with several native property types and is compatible with some 3rd-party property editors like <a href="http://our.umbraco.org/projects/backoffice-extensions/digibiz-advanced-media-picker">DAMP</a></p>
+
+<h3>
+<a name="licensing" class="anchor" href="#licensing"><span class="octicon octicon-link"></span></a>Licensing</h3>
+
+<p>This software is released under the <a href="http://opensource.org/licenses/MIT">MIT License</a></p>
+
+<h3>
+<a name="clean-installation" class="anchor" href="#clean-installation"><span class="octicon octicon-link"></span></a>Clean Installation</h3>
+
+<p>Installing Widget Builder is done like any other package. Simply <a href="https://github.com/kgiszewski/WidgetBuilder/releases">download</a> and use the Developer Section-&gt;Install Local Package Wizard to get going. That's it.</p>
+
+<h3>
+<a name="upgrading-1x-to-2x" class="anchor" href="#upgrading-1x-to-2x"><span class="octicon octicon-link"></span></a>Upgrading 1.x to 2.x</h3>
+
+<p>Make a backup of both your site code files AND the database. You'll be sorry if it all goes unwell.</p>
+
+<p>This should be straight-forward, but somethings have been moved around and renamed so it may get slightly rocky (but probably not).</p>
+
+<p><a href="https://github.com/kgiszewski/WidgetBuilder/releases">Download</a> the package but DO NOT use package installer yet.
+Edit <code>~/App_Data/packages/installed/installedPackages.config</code> with a text editor.
+Remove the XML 'package' element for Widget Builder only. This effectively tells your site to 'forget' about the fact you have Widget Builder installed.
+Delete from <code>/bin</code> - <code>widget_builder.dll</code> (and remove the reference if using VS).
+Install Widget Builder as a clean install as stated above.</p>
+
+<h3>
+<a name="designing-your-first-widget" class="anchor" href="#designing-your-first-widget"><span class="octicon octicon-link"></span></a>Designing your first Widget</h3>
+
+<p>Designing a Widget is easy. Follow these steps to get going:</p>
+
+<ul>
+<li>Visit the Developer Section</li>
+<li>Right-click <code>Data Types</code>
+</li>
+<li>Left-click <code>Create</code>
+</li>
+<li>Give your Widget a name, Click <code>Create</code>
+</li>
+<li>Choose Widget Builder from the drop down, click the save icon.</li>
+<li>You should now see the toolbar of things you can add to your Widget</li>
+<li>Single-click each item you wish to add. Make sure you give them UNIQUE (to the Widget) element names. * The element name will be used in the cache for data retrival later on your template.</li>
+<li>Each element you add to your Widget will have different settings.</li>
+<li>Choose how many times this Widget can be repeated within a property (Max Widgets Per Property). Choose <code>1</code> if you do not want an editor to be able to add more on the data editor screen.</li>
+<li>Click the save icon and you are done.</li>
+<li>Place your Widget</li>
+</ul><p>Now that we have a Widget, you will need to affix the Widget to a doctype as you would any other data type.</p>
+
+<ul>
+<li>Visit the Settings Section</li>
+<li>Choose your document type you wish to add this to.</li>
+<li>Add it as you would anything else.</li>
+<li>Save your doctype.</li>
+<li>Test your Widget</li>
+</ul><p>Now that we have created a Widget and added it to a doctype. We need to create a piece of content based on that doctype. We will assume you know how to create content. Test your Widget from the newly created content.</p>
+
+<h3>
+<a name="output-your-widget" class="anchor" href="#output-your-widget"><span class="octicon octicon-link"></span></a>Output Your Widget</h3>
+
+<p>You grab data from a Widget in your templates as you would any other data type. You can check your local <code>~/App_Data/umbraco.config</code> to see how your data is being stored. It should be no surprise that Widget Builder stores its data as XML.</p>
+
+<p>If using XSLT, you can navigate your <code>$currentPage</code> element and dig into your Widget as you see fit.</p>
+
+<p>If using Razor, include the <code>WidgetBuilder.Extensions</code> namespace into your project.  A list of methods can be found <a href="https://github.com/kgiszewski/WidgetBuilder/blob/master/WidgetBuilder/WidgetBuilder.Extensions/Extensions.cs">here</a>.</p>
+
+<h3>
+<a name="give-your-widget-personality" class="anchor" href="#give-your-widget-personality"><span class="octicon octicon-link"></span></a>Give your Widget personality</h3>
+
+<p>Another cool feature is injecting jQuery and/or CSS to your Widget to give it special behavior. You can inject these in two ways:</p>
+
+<p>You can simply edit the built-in <code>~/umbraco/plugins/WidgetBuilder/custom.js</code> (or css) files
+Or use different files by specifying the file names in the Developer Section-&gt; Data Types -&gt; My Widget prevalue page.</p>
+
+<h3>
+<a name="importexport-you-widget" class="anchor" href="#importexport-you-widget"><span class="octicon octicon-link"></span></a>Import/Export you Widget</h3>
+
+<p>Wouldn't it be great if you could simply copy/paste a widget to another widget either locally or to a different install altogether? Well you can.</p>
+
+<ul>
+<li>Visit the Developers Section-&gt;Data Types-&gt;Your Widget.</li>
+<li>Click <code>Toggle JSON (Advanced Only)</code>
+</li>
+<li>A textarea will become exposed. Copy the JSON from the box to your clipboard.</li>
+<li>Create a new Widget and save it.</li>
+<li>Click <code>Toggle JSON (Advanced Only)</code>
+</li>
+<li>Paste the JSON into the box and save.</li>
+<li>If you have any custom CSS/JS, you will need to make sure you copy them over if going to another install.</li>
+</ul><h3>
+<a name="permissions" class="anchor" href="#permissions"><span class="octicon octicon-link"></span></a>Permissions</h3>
+
+<p>Permissions in Widget Builder works as simply hiding some (or all) properties by User. </p>
+
+<ul>
+<li>Visit the Users Section-&gt;Widget Builder User Permissions. </li>
+<li>Click a user, then toggle what the user can see. </li>
+</ul><p>At this time you cannot do this by role. This information is stored in the <code>~/config/WidgetBuilder.config</code> file.</p>
+
+<h3>
+<a name="how-to-get-damp-to-work-with-widget-builder" class="anchor" href="#how-to-get-damp-to-work-with-widget-builder"><span class="octicon octicon-link"></span></a>How to get DAMP to work with Widget Builder</h3>
+
+<p>Make a backup of both your site code files AND the database. You'll be sorry if it all goes unwell.</p>
+
+<p>If you use DAMP and want to use it with Widget Builder, you are in luck. Widget Builder presently works with DAMP 2.7. We can't control DAMP's development, but as long as you have that version of DAMP; we can rock and roll with it.</p>
+
+<ul>
+<li>
+<a href="http://our.umbraco.org/projects/backoffice-extensions/digibiz-advanced-media-picker">Download</a> and Install DAMP 2.7</li>
+<li>Next go <a href="https://github.com/kgiszewski/WidgetBuilder/releases">here</a> and grab <code>DampWidgetExtension.dll</code> and drop it into your <code>/bin</code>
+</li>
+<li>DAMP will now appear in your tool bar while designing a Widget.</li>
+<li>Be sure to remove <code>DampWidgetExtension.dll</code> if you uninstall DAMP.</li>
+</ul><h3>
+<a name="known-issues" class="anchor" href="#known-issues"><span class="octicon octicon-link"></span></a>Known Issues</h3>
+
+<p>Widget Builder isn't perfect, here is a list of known issues:</p>
+
+<ul>
+<li>WB does not play nice with the 'Related Links' data type. Please use the uComponents Multi-Url Picker instead.</li>
+<li>WB's RTE (TinyMCE) implementation has an issue with 'Insert Macro'. At this time it does not work.</li>
+<li>WB's RTE (TinyMCE) implementation has an issue with the 'styles' dropdown being misplaced at times. There is no fix at this time.</li>
+<li>WB's RTE (TinyMCE) implementation had an issue with Umbraco v6.1.x when sorted. There is now a fix! Replace your /umbraco/Plugins/WidgetBuilder/WidgetBuilder.js with this.</li>
+</ul><h3>
+<a name="support" class="anchor" href="#support"><span class="octicon octicon-link"></span></a>Support</h3>
+
+<p>This project is sunset but if you have a question, please send a tweet to <a href="https://twitter.com/kevingiszewski">@KevinGiszewski</a></p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
