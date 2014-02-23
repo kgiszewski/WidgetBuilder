@@ -20,6 +20,10 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,10 +44,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DigibizAdvancedMediaPicker">
-      <HintPath>..\references\DigibizAdvancedMediaPicker.dll</HintPath>
+      <HintPath>..\WidgetBuilder\bin\DigibizAdvancedMediaPicker.dll</HintPath>
     </Reference>
     <Reference Include="DigibizTree">
-      <HintPath>..\references\DigibizTree.dll</HintPath>
+      <HintPath>..\WidgetBuilder\bin\DigibizTree.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
