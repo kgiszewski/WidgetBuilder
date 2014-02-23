@@ -164,6 +164,8 @@ code, pre {
 	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color:#000;
   font-size:14px;
+  border: 1px solid #ccc;
+  padding: 2px;
 }
 
 pre {
