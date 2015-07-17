@@ -16,9 +16,9 @@ Comes with several native property types and is compatible with some 3rd-party p
 
 Note: This is not compatible with Umbraco v7.  For similiar v7 functionality see [Umbraco Archetype](https://github.com/imulus/Archetype).
 
-### Sunsetting ###
+### No Longer Active ###
 
-Note that this project is sunsetting due to incompatibility with Umbraco 7.  This means no active development is planned but pull-requests and the occassional bug fix with continue.
+Note that this project has run its course. This means no active development is planned but pull-requests will be considered.
 
 ### Licensing ###
 
